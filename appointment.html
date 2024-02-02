@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang='en'>
+  <head>
+    <meta charset='utf-8' />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Appointment</title>
+    <link rel="stylesheet" href="appointment3.css">
+    <script src='https://cdn.jsdelivr.net/npm/fullcalendar@6.1.10/index.global.min.js'></script>
+    <script>
+
+      document.addEventListener('DOMContentLoaded', function() {
+        var calendarEl = document.getElementById('calendar');
+        var calendar = new FullCalendar.Calendar(calendarEl, {
+          initialView: 'dayGridMonth',
+          selectable: true,
+          select: function(info) {
+            // Display prompts for the user to input data
+            var eventData = prompt('Enter an name:');
+            var eventData = prompt('Enter an name:');
+            
+            // Check if the user entered data
+            if (eventData) {
+              var eventDate = prompt('Enter the event date (YYYY-MM-DD):');
+              var eventTime = prompt('Enter the event time (HH:mm):');
+              
+              // Validate and create a Date object from the input
+              var startDateTime = new Date(eventDate + 'T' + eventTime);
+              if (!isNaN(startDateTime.getTime())) {
+                // Add the event to the calendar
+                calendar.addEvent({
+                  title: eventData,
+                  start: startDateTime,
+                  allDay: false
+                });
+              } else {
+                alert('Invalid date or time format. Please use YYYY-MM-DD for date and HH:mm for time.');
+              }
+            }
+          }
+        });
+        calendar.render();
+      });
+
+    </script>
+  </head>
+  <body>
+    <div id='calendar'></div>
+  </body>
+</html>

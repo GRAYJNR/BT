@@ -1,0 +1,270 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="preload" as="style" href="https://happiworkers.health/build/assets/app-7630d722.css" />
+    <link rel="stylesheet" href="https://happiworkers.health/build/assets/app-7630d722.css" />
+    <title>BT | Book An Appointment</title>
+    <!-- Favicon  -->
+    <link rel="icon" href=".favicon_io/" />
+    <!-- Primary Meta Tags -->
+
+
+    <!-- <meta name="description"
+        content="A revolutionary platform prioritising mental well-being and employee career development" />
+    <meta property="og:image" content="https://happiworkers.health/assets/images/homepage-preview.png">
+    <meta property="og:type" content="website"> -->
+
+
+
+
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz"
+        crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css"
+        integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous" />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600&display=swap" rel="stylesheet">
+    <!-- <link rel="stylesheet" href="https://happiworkers.health/assets/css/owl.carousel.min.css">
+    <link rel="stylesheet" href="https://happiworkers.health/assets/css/owl.theme.default.min.css">
+    <link href="https://happiworkers.health/assets/css/styles.css" rel="stylesheet"> -->
+    <style>
+        [wire\:loading],
+        [wire\:loading\.delay],
+        [wire\:loading\.inline-block],
+        [wire\:loading\.inline],
+        [wire\:loading\.block],
+        [wire\:loading\.flex],
+        [wire\:loading\.table],
+        [wire\:loading\.grid],
+        [wire\:loading\.inline-flex] {
+            display: none;
+        }
+
+        [wire\:loading\.delay\.shortest],
+        [wire\:loading\.delay\.shorter],
+        [wire\:loading\.delay\.short],
+        [wire\:loading\.delay\.long],
+        [wire\:loading\.delay\.longer],
+        [wire\:loading\.delay\.longest] {
+            display: none;
+        }
+
+        [wire\:offline] {
+            display: none;
+        }
+
+        [wire\:dirty]:not(textarea):not(input):not(select) {
+            display: none;
+        }
+
+        input:-webkit-autofill,
+        select:-webkit-autofill,
+        textarea:-webkit-autofill {
+            animation-duration: 50000s;
+            animation-name: livewireautofill;
+        }
+
+        @keyframes livewireautofill {
+            from {}
+        }
+    </style>
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/flatpickr/dist/flatpickr.min.css">
+    <style>
+        body {
+            background-image: url(../../images/IMG-20231118-WA0030.jpg);
+            background-color: black;
+            background-size: cover;
+            width: 100%;
+            height: 100%;
+            /* background-attachment: fixed; */
+            /* background-position-x: 0px, left;  */
+            /* background-position-y: -102px, bottom;  */
+            background-repeat: no-repeat;
+        }
+
+        .pt-8 {
+            padding-top: 5.4375rem;
+        }
+
+        .form-floating>.form-control,
+        .form-floating>.form-control-plaintext,
+        .form-floating>.form-select {
+            height: calc(4.5rem + calc(var(--bs-border-width) * 2));
+        }
+
+        .form-floating>.form-control-plaintext:focus,
+        .form-floating>.form-control-plaintext:not(:placeholder-shown),
+        .form-floating>.form-control:focus,
+        .form-floating>.form-control:not(:placeholder-shown) {
+            padding-top: 2.625rem;
+        }
+
+        .form-control {
+            border-radius: 0.625rem;
+        }
+
+        /* .overlay { */
+        /* position: absolute; */
+        /* top: 25%; */
+        /* left: 25%; */
+        /* } */
+        /* .thumbnail > img { */
+        /* width: 318px; */
+        /* height: 318px; */
+        /* object-fit: cover; */
+        /* border-radius: 50%; */
+        /* } */
+        /* // Book a demo */
+        .demo-card .card {
+            width: 100%;
+            height: 100px;
+        }
+    </style>
+</head>
+
+<body>
+
+
+    <div class="container-fluid demo-section position-relative px-lg-5 pt-8 my-4">
+        <div class="row" style="margin-left: 50px;">
+
+            <div class="col-lg-5 my-auto">
+                <div data-aos="fade-up" data-aos-duration="1500">
+                    <section class="card py-3 px-lg-3 px-2">
+                        <form method="post" action="https://happiworkers.health/book-demo" class="row">
+                            <input type="hidden" name="_token" value="XldBTpQU60ekeGDxF3pQYl2UJS122Sg8KlFvisdT"
+                                autocomplete="off">
+                            <div class="col-lg-12 py-3">
+                                <div class="row">
+                                    <!-- <div class="col-md-6">
+                                        <div class="form-floating mb-4">
+                                            <input wire:model="first_name" name="first_name" type="text"
+                                                class="form-control " id="first-name" placeholder="eg. john" value="">
+                                            <label for="first-name">First Name</label>
+                                        </div>
+                                    </div> -->
+                                    <div class="col-md-6">
+                                        <div class="form-floating mb-4">
+                                            <input wire:model="last_name" name="last_name" type="text"
+                                                class="form-control " id="last-name" placeholder="name@example.com"
+                                                value="">
+                                            <label for="last-name">Name</label>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-6">
+                                        <div class="form-floating mb-4">
+                                            <input wire:model="date" name="date" type="text"
+                                                class="form-control datetimepicker " id="date" placeholder="" value="">
+                                            <label for="date">Select Date & Time</label>
+                                        </div>
+                                    </div>
+                                    <!-- <div class="col-md-6">
+                                        <div class="form-floating mb-4">
+                                            <input wire:model="email" name="email" type="email" class="form-control "
+                                                id="email" placeholder="eg. john@example.com" value="">
+                                            <label for="email">Work Email</label>
+                                        </div>
+                                    </div> -->
+                                    <div class="col-md-6">
+                                        <div class="form-floating mb-4">
+                                            <input wire:model="phone" name="phone" type="text" class="form-control "
+                                                id="phone" placeholder="eg. +233000000000" value="">
+                                            <label for="phone">Phone Number</label>
+                                        </div>
+                                    </div>
+                                    <!-- <div class="col-md-6">
+                                        <div class="form-floating mb-4">
+                                            <input wire:model="company_name" name="company_name" type="text"
+                                                class="form-control " id="company_name" placeholder="eg. ABC Corp"
+                                                value="">
+                                            <label for="company_name">Company Name</label>
+                                        </div>
+                                    </div> -->
+                                    <!-- <div class="col-md-6">
+                                        <div class="form-floating mb-4">
+                                            <input wire:model="employee_total" name="employee_total" type="number"
+                                                class="form-control " id="employee_total" placeholder="eg. 10" value="">
+                                            <label for="employee_total">Number of employees</label>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-6"> -->
+                                        <div class="form-floating mb-2">
+                                            <select multiple class="form-select" wire:model.lazy="info_source" name="info_source"
+                                                id="floatingHear" aria-label="Select hear from us Dropdown">
+                                                <option selected>Select option</option>
+                                                <option value="Pedicure">Pedicure</option>
+                                                <option value="Manicure">Manicure</option>
+                                                <option value="MakeUp">MakeUp</option>
+                                                <option value="Facials">Facials</option>
+                                            </select>
+                                            <label for="floatingHear" class="text-dark">
+                                            </label>
+                                        </div>
+
+                                    </div>
+                                </div>
+                                <div class="d-flex justify-content-center mt-4">
+                                    <button type="submit"
+                                        class="btn rounded-3 btn-primary d-flex justify-content-between">Book a Demo
+                                        <div class="spinner-border ps-2" wire:loading.block wire:target='submit'
+                                            role="status">
+                                            <span class="sr-only"></span>
+                                        </div>
+                                    </button>
+                                </div>
+                            </div>
+                        </form>
+                    </section>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.1/jquery.min.js"
+        integrity="sha512-aVKKRRi/Q/YV+4mjoKBsE4x3H+BkegoM/em46NNlCqNTmUYADjBbeNefNxYV7giUp0VxICtqdrbqU7iVaeZNXA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
+        integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.min.js"
+        integrity="sha384-fbbOQedDUMZZ5KreZpsbe1LCZPVmfTnH7ois6mU1QK+m14rQ1l2bGBq41eYeM/fS"
+        crossorigin="anonymous"></script>
+
+    <script>
+
+
+    </script>
+    <script src="/livewire/livewire.js?id=90730a3b0e7144480175" data-turbo-eval="false"
+        data-turbolinks-eval="false"></script>
+    <script data-turbo-eval="false"
+        data-turbolinks-eval="false">window.livewire = new Livewire(); window.Livewire = window.livewire; window.livewire_app_url = ''; window.livewire_token = 'XldBTpQU60ekeGDxF3pQYl2UJS122Sg8KlFvisdT'; window.deferLoadingAlpine = function (callback) { window.addEventListener('livewire:load', function () { callback(); }); }; let started = false; window.addEventListener('alpine:initializing', function () { if (!started) { window.livewire.start(); started = true; } }); document.addEventListener("DOMContentLoaded", function () { if (!started) { window.livewire.start(); started = true; } });</script>
+    <script src="https://cdn.jsdelivr.net/npm/flatpickr"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="https://happiworkers.health/assets/js/owl.carousel.min.js"></script>
+    <script>
+        AOS.init();
+
+        $(function () {
+            $('.overlay').on('click', (e) => {
+                $('#image').trigger('click');
+            })
+
+            $('.datetimepicker').flatpickr({
+                enableTime: true,
+                dateFormat: "d/m/Y H:i"
+            })
+        });
+    </script>
+</body>
+
+</html>

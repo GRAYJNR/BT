@@ -963,7 +963,7 @@ h6 {
 }
 
 .services .service-item i {
-  background: var(--color-primary);
+  background: deeppink;
   color: #fff;
   font-size: 24px;
   transition: 0.3s;
@@ -993,7 +993,7 @@ h6 {
 }
 
 .services .service-item:hover:before {
-  background: var(--color-primary);
+  background: deeppink;
   right: 0;
   top: 0;
   width: 100%;
@@ -1008,7 +1008,7 @@ h6 {
 
 .services .service-item:hover i {
   background: #fff;
-  color: var(--color-primary);
+  color: deeppink;
 }
 
 /*--------------------------------------------------------------
