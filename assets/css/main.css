@@ -1070,7 +1070,7 @@ h6 {
 .contact .info-item p {
   padding: 0;
   margin-bottom: 0;
-  font-size: 18px;
+  font-size: 10px;
   color: #fff;
 }
 
@@ -1148,7 +1148,7 @@ h6 {
 }
 
 .contact .php-email-form button[type=submit] {
-  background: deeppink;
+  background: pink;
   border: 0;
   padding: 10px 35px;
   /* color: #fff; */
@@ -1157,7 +1157,7 @@ h6 {
 }
 
 .contact .php-email-form button[type=submit]:hover {
-  background: pink;
+  background: deeppink;
 }
 
 @keyframes animate-loading {
@@ -1226,11 +1226,11 @@ h6 {
   text-transform: uppercase;
   transition: 0.3s;
   color: #fff;
-  background: deeppink;
+  background: pink;
 }
 
 .hero .btn-get-started:hover {
-  background: pink
+  background: deeppink
 }
 
 @media (max-width: 768px) {
