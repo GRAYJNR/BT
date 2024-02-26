@@ -1148,7 +1148,7 @@ h6 {
 }
 
 .contact .php-email-form button[type=submit] {
-  background: pink;
+  background: deeppink;
   border: 0;
   padding: 10px 35px;
   /* color: #fff; */
@@ -1157,7 +1157,7 @@ h6 {
 }
 
 .contact .php-email-form button[type=submit]:hover {
-  background: deeppink;
+  background: pink;
 }
 
 @keyframes animate-loading {
@@ -1226,11 +1226,11 @@ h6 {
   text-transform: uppercase;
   transition: 0.3s;
   color: #fff;
-  background: pink;
+  background: deeppink;
 }
 
 .hero .btn-get-started:hover {
-  background: deeppink
+  background: pink
 }
 
 @media (max-width: 768px) {
